@@ -2,6 +2,12 @@ import React, { useRef } from 'react'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
+import Expertise from '../components/agents/Expertise'
+import Para1 from '../components/agents/Para1'
+import List from '../components/agents/List'
+import Para2 from '../components/agents/Para2'
+import EmptyDiv from '../components/agents/EmptyDiv'
+import Para3 from '../components/agents/Para3'
 
 const Agents = () => {
 
@@ -70,7 +76,22 @@ const Agents = () => {
       </div>
       </div>
     </div>
-    <div className='section2 h-screen'></div>
+    <div className='section2 flex justify-center h-screen'>
+      <div className='flex justify-center mt-44 h-[300px] w-[80vw]  gap-16'>
+        <div className='sec2.1  flex  flex-col justify-between'>
+          <Expertise/>
+          <Para1/>
+        </div>
+        <div className='sec2.2  flex flex-col justify-between'>
+          <List/>
+          <Para2/>
+        </div>
+        <div className='sec2.3 bg-white flex flex-col justify-between'>
+          <EmptyDiv/>
+          <Para3/>
+        </div>
+      </div>
+    </div>
     </div>
   )
 }
