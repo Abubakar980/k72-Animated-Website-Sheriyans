@@ -13,3 +13,43 @@
 body{
     overflow-x: hidden;
 }
+
+
+/* ✅ Custom scrollbar hide */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+
+
+.moveX{
+    animation-name: moveAnimation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes moveAnimation {
+    from{
+        transform: translateX(0)
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+
+
+.moveLink{
+    opacity: 0;
+}
+
+.link:hover .moveLink{
+    opacity: 1;
+    transition: all ease 0.3s;
+}
