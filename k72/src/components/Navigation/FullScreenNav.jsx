@@ -15,7 +15,7 @@ const FullScreenNav = () => {
             display: 'block'
         })
         tl.to('.stairing', {
-            delay: 0.2,
+            delay: 0.1,
             height: '100%',
             stagger: {
                 amount: -0.3
@@ -119,15 +119,15 @@ const FullScreenNav = () => {
                         <div className='moveLink absolute text-black pb-4 flex h-32 top-0 bg-[#D3FD50]'>
                             <div className='moveX flex items-center'>
                                 <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>Pour Tout voir</h2>
-                                <img className='lg:h-32 pt-3 h-14 rounded-full shrink-0 lg:w-72 w-32 object-cover' src="https://k72.ca/uploads/caseStudies/WIDESCAPE/WS---K72.ca---MenuThumbnail-640x290.jpg" alt="" />
+                                <img className='lg:h-32 pt-3 h-14 rounded-full shrink-0 lg:w-72 w-32 object-cover' src="https://k72.ca/uploads/teamMembers/CAMILLE_640X290_2-640x290.jpg" alt="" />
                                 <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>Pour Tout voir</h2>
-                                <img className='lg:h-32 pt-3 h-14 rounded-full shrink-0 lg:w-72 w-32 object-cover' src="https://k72.ca/uploads/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290-640x290.jpg" alt="" />
+                                <img className='lg:h-32 pt-3 h-14 rounded-full shrink-0 lg:w-72 w-32 object-cover' src="https://k72.ca/uploads/teamMembers/Claire_640X290-640x290.jpg" alt="" />
                             </div>
                             <div className='moveX flex items-center'>
                                 <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>Pour Tout voir</h2>
-                                <img className='lg:h-32 pt-3 h-14 rounded-full shrink-0 lg:w-72 w-32 object-cover' src="https://k72.ca/uploads/caseStudies/WIDESCAPE/WS---K72.ca---MenuThumbnail-640x290.jpg" alt="" />
+                                <img className='lg:h-32 pt-3 h-14 rounded-full shrink-0 lg:w-72 w-32 object-cover' src="https://k72.ca/uploads/teamMembers/CAMILLE_640X290_2-640x290.jpg" alt="" />
                                 <h2 className='whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase'>Pour Tout voir</h2>
-                                <img className='lg:h-32 pt-3 h-14 rounded-full shrink-0 lg:w-72 w-32 object-cover' src="https://k72.ca/uploads/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290-640x290.jpg" alt="" />
+                                <img className='lg:h-32 pt-3 h-14 rounded-full shrink-0 lg:w-72 w-32 object-cover' src="https://k72.ca/uploads/teamMembers/Claire_640X290-640x290.jpg" alt="" />
                             </div>
                         </div>
 
