@@ -1,7 +1,54 @@
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { useContext, useRef } from "react";
+import { NavbarContext } from "../../context/NavContext";
+
 const FullScreenNav = () => {
+
+  const fullNavLinksRef = useRef(null)
+  const [navOpen, setNavOpen] = useContext(NavbarContext)
+ 
+
+   useGSAP(
+      function () {
+        const tl = gsap.timeline();
+        tl.from(".stairing", {
+          height: 0,
+          stagger: {
+            amount: -0.3,
+          },
+        });
+        tl.from('.link',{
+          rotateX:90,
+          stagger: {
+            amount: 0.3,
+          },
+        })
+        tl.pause()
+        if(navOpen){
+          tl.play()
+        } else {
+          tl.reverse()
+        }
+      },[navOpen]);
+
+
   return (
-    <div id='fullscreennav' className='h-screen text-white w-full absolute bg-black'>
-        <div>
+    <div id='fullscreennav' className='hidden h-screen text-white w-full absolute '>
+
+        <div className="h-screen w-full fixed">
+          <div className="h-full w-full flex">
+          <div className="stairing h-full w-1/5 bg-red-900"></div>
+          <div className="stairing h-full w-1/5 bg-red-900"></div>
+          <div className="stairing h-full w-1/5 bg-red-900"></div>
+          <div className="stairing h-full w-1/5 bg-red-900"></div>
+          <div className="stairing h-full w-1/5 bg-red-900"></div>
+        </div>
+        </div>
+
+
+
+        <div ref={fullNavLinksRef} className="relative">
             <div className="flex w-full p-3 justify-between items-start">
             <div className="">
             <div className="w-32">
@@ -18,7 +65,7 @@ const FullScreenNav = () => {
 
 
         <div id='all-links' className='cursor-pointer'>
-            <div className='link relative border-t-1 border-white'>
+            <div className='link origin-top relative border-t-1 border-white'>
                 <h1 className='font-[font2] text-center leading-[1] pt-1 text-[7vw] uppercase'>
                   Projects
                 </h1>
@@ -66,11 +113,7 @@ const FullScreenNav = () => {
             </div>
 
 
-
-
-
-
-            <div className='link relative border-t-1 border-white'>
+            <div className='link origin-top relative border-t-1 border-white'>
                 <h1 className='font-[font2] text-center leading-[1] pt-1 text-[7vw] uppercase'>
                   Agence
                 </h1>
@@ -118,11 +161,7 @@ const FullScreenNav = () => {
             </div>
 
 
-
-
-
-
-            <div className='link relative border-t-1 border-white'>
+            <div className='link origin-top relative border-t-1 border-white'>
                 <h1 className='font-[font2] text-center leading-[1] pt-1 text-[7vw] uppercase'>
                   Contact
                 </h1>
@@ -170,14 +209,7 @@ const FullScreenNav = () => {
             </div>
 
 
-
-
-
-
-
-
-
-            <div className='link relative border-y-1 border-white'>
+            <div className='link origin-top relative border-y-1 border-white'>
                 <h1 className='font-[font2] text-center leading-[1] pt-1 text-[7vw] uppercase'>
                   Blogue
                 </h1>

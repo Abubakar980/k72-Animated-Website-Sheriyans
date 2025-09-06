@@ -1,5 +1,4 @@
 import { useRef } from "react"
-import { HiOutlineMenuAlt4 } from "react-icons/hi";
 
 
 const Navbar = () => {
@@ -22,8 +21,11 @@ const Navbar = () => {
             navGreenRef.current.style.height = "0%"
         }}
         className="h-14 bg-black relative w-[16vw]">
-            <div ref={navGreenRef} className="bg-[#D3FD50] text-white transition-all absolute top-0 h-0 w-full "><HiOutlineMenuAlt4 /></div>
-            <div className=""></div>
+            <div ref={navGreenRef} className="bg-[#D3FD50] text-white transition-all absolute top-0 h-0 w-full "></div>
+            <div className="relative h-full px-12 flex flex-col gap-1.5 justify-center items-end ">
+                <div className="w-18 h-0.5 bg-white"></div>
+                <div className="w-10 h-0.5 bg-white"></div>
+            </div>
         </div>
 
     </div>
